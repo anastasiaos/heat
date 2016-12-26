@@ -78,7 +78,7 @@ void saveResult(const double x[], const double y[], int k) {
   //записываем скрипт для gnuplot в файл
   FILE *scrpt = fopen("/home/user/Desktop/plot.txt", "w");
   fprintf(scrpt, "set terminal png\n");
-  fprintf(scrpt, "set output '/home/user/Desktop/heat_plot/%d.png'\n", k);
+  fprintf(scrpt, "set output '/home/user/Desktop/order_8th/heat_plot/%d.png'\n", k);
   fprintf(scrpt, "set yrange [0:5]\n");
   fprintf(scrpt, "plot '/home/user/Desktop/result.txt' using 1:2 with lines");
   fclose(scrpt);
