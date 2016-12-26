@@ -9,6 +9,8 @@ int
 jac (double t, const double y[], double *dfdy, 
      double dfdt[], void *params);
 
+//функция, рисующая пачку картинок
+void saveResult(const double x[], const double y[], int k);
 
 // set y with Cauchy condition
 void Cauchy(double y[]);
